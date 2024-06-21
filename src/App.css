@@ -8,11 +8,13 @@ body{
 }
 .logo img{
 height: 40px;
+margin-top: 10px;
 }
 
 header{
     width: 1300px;
     max-width: 90%;
+    
     margin: auto;
     display: grid;
     grid-template-columns: 20% 80%;
