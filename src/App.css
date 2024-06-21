@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/saiyan-sans');
+
+body{
+    margin:0;
+    font-size: 16px;
+
+    font-family: 'Saiyan Sans', sans-serif;
+}
+.logo img{
+height: 40px;
+}
+
+header{
+    width: 1300px;
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 60px;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+  
+}
+
+header nav ul li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -50px;
+}
+
+.banner .content{
+    text-align: center;
+    color: red;
+    text-shadow: 0 10px 50px brown;
+}
+
+.banner .content .title {
+    font-size: 3em;
+    animation: animationBlur 3s linear infinite;
+}
+
+@keyframes animationBlur{
+    0%,  80%{
+        filter:blur(0);
+    }
+    90%{
+        filter:blur(3px) ;
+    }
+    100%{
+        filter: blur(0);
+    }
+}
+
+.banner .content .desc{
+    text-align: left;
+    padding: 20px;
+    width: 250px;
+    rotate: -5deg;
+}
+
+.banner .video{
+    position: absolute;
+    right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: -1;
+filter: brightness(0.4);
+}
